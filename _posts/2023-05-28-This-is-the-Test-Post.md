@@ -1,13 +1,13 @@
 ---
-title: Sample Test Post
-author: Ajaytekam
+title: Sample Test Post   
+author: ajaytekam
 date: 2023-05-28 18:32:00 +0530
 img_path: /assets/posts/20230528/
 categories: [Blogging, Tutorial]  
 tags: [sample, test]
 ---
 
-# Introduction 
+## Introduction 
 
 > In this post i am going to try to include some image in the post
 
