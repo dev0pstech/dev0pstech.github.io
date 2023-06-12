@@ -1,8 +1,8 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> Please visit my Portfolio Website [ajaytekam.com](https://ajaytekam.com/) to know more about me.. Thank you
 {: .prompt-tip }
