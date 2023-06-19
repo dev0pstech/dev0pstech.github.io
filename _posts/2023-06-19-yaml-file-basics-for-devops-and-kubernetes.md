@@ -1,6 +1,6 @@
 ---   
 title: Yaml file basics for Devops and Kubernetes
-layout: post
+layout: single
 toc: true
 author: ajaytekam  
 date: 2023-06-19 14:30:00 +0530  
