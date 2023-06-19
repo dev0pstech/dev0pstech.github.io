@@ -1,10 +1,10 @@
 ---   
-title: Yaml file basics for Devops and Kubernetes  
+title: Yaml file Basics for Devops and Kubernetes  
 author: ajaytekam   
 date: 2023-06-19 14:30:00 +0530   
 img_path: /assets/posts/20230619/   
-categories: [DevOps]    
-tags: [kubernetes, yaml]  
+categories: [DevOps, Kubernetes]    
+tags: [yaml]  
 ---    
 
 ![](yaml.jpg)  
