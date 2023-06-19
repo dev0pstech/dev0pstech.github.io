@@ -1,7 +1,7 @@
 ---   
 title: Yaml file basics for Devops and Kubernetes
-layout: single
-toc: true
+layout: post  
+toc: true 
 author: ajaytekam  
 date: 2023-06-19 14:30:00 +0530  
 img_path: /assets/posts/20230619/  
@@ -11,7 +11,7 @@ tags: [kubernetes, yaml]
 
 ![](yaml.jpg)  
 
-## Basics
+## Basics     
 
 YAML file is a text-based file used for configuration files, data serialization, and exchange between different as a format for storing structured data.
 
@@ -28,7 +28,7 @@ Sample_names:
 - Dwayne
 ```
 
-## Lists in YAML
+## Lists in YAML     
 
 * Lists begin with a hyphen
 * Dependent on whitespace/indentation
@@ -55,7 +55,7 @@ Sample_names:
 - Dwayne
 ```
 
-## Dictonary in YAML
+## Dictonary in YAML    
 
 example of a simple dictonary
 
@@ -106,9 +106,9 @@ contact:
   address: milkey way, far behind the son
 ```
 
-In the second dictonary there is a space/indentation in dictonary items.
+In the second dictonary there is a space/indentation in dictonary items.  
 
-## Nested yaml
+## Nested yaml    
 
 JSON
 
@@ -159,8 +159,9 @@ Dataset:
     - Hew01
     - Hew02
     - Hew03
-```
-## Comments on YML
+```  
+
+## Comments on YML   
 
 The `#` character is used to comment on yml document
 
@@ -175,9 +176,9 @@ contact:
   phone: "0987654321"
   address: milkey way, far behind the son
 
-```
-
-## Tripple hyphens in YML file
+```   
+ 
+## Tripple hyphens in YML file   
 
 * The three hyphens `---` is a document separator.
 * It is used to separate multiple YAML documents within a single file.
@@ -197,9 +198,9 @@ person:
 animal:
   species: dog
   breed: Labrador Retriever
-```
+```   
 
-## Some useful utilities
+## Some useful utilities   
 
 ### `yq` command-line tool
 
