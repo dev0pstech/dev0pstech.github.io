@@ -12,7 +12,9 @@ tags: [yaml]
 ## Contents 
 
 - [Basics](#basics)
-- [Comparision of Json and yml](#comparision-of-json-and-yml)
+- [Lists in YAML](#lists-in-yaml)   
+- [Dictonary in YAML](#dictonary-in-yaml)   
+- [Nested YAML](#nested-yaml)   
 - [Comments on yml](#comments-on-yml)
 - [Tripple hyphens in YML file](#tripple-hyphens-in-yml-file)
 - [Some useful utilities](#some-useful-utilities)
