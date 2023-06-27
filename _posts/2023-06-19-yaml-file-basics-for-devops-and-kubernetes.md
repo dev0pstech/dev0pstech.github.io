@@ -386,7 +386,7 @@ Dataset:
 
 The `#` character is used to comment on yml document
 
-```
+```yml
 ---
 # user details
 name: John Doe
@@ -407,7 +407,7 @@ contact:
 * It is commonly used when you want to group related data or configurations together, making it easier to manage and organize your YAML files.
 * When parsing YAML files, libraries and tools can process each document individually by recognizing the --- separator. This allows you to extract or manipulate specific documents within the file as separate entities.
 
-```
+```yml 
 ---
 # Document 1
 person:
