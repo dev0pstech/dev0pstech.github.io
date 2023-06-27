@@ -435,17 +435,3 @@ Link : https://github.com/mikefarah/yq
 
 - [www.yamllint.com](https://www.yamllint.com/) : Check yml file for errors.
 - [www.json2yaml.com](https://www.json2yaml.com/) : Convert json to yml.
-
-
-## Some useful utilities   
-
-### `yq` command-line tool
-
-A lightweight and portable command-line YAML processor.
-
-Link : https://github.com/mikefarah/yq
-
-### useful website
-
-- [www.yamllint.com](https://www.yamllint.com/) : Check yml file for errors.
-- [www.json2yaml.com](https://www.json2yaml.com/) : Convert json to yml.
