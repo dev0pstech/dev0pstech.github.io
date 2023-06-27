@@ -1,5 +1,5 @@
 ---   
-title: ipython basics : how to use ipython for python development
+title: How to use IPYTHON for Python Development  
 author: ajaytekam   
 date: 2023-06-28 03:30:00 +0530   
 img_path: /assets/posts/20230628/   
