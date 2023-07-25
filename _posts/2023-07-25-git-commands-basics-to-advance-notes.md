@@ -647,7 +647,7 @@ Steps :
 
 Github repo : https://github.com/jesseduffield/lazygit  
 
-![](https://github.com/jesseduffield/lazygit/blob/assets/staging.gif)    
+![](git8.gif)  
 
 * __tig :__ text-mode interface for Git.    
 
