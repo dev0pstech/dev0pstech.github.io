@@ -5,9 +5,6 @@ date: 2023-07-25 16:10:00 +0530
 img_path: /assets/posts/20230725/   
 categories: [DevOps, Git, VCS, Github]    
 tags: [yaml, git, vcs, Github, DevOpsTools]  
-image:
-  path: /assets/posts/20230725/git0.png 
-  alt: git command basics to advance notes 
 ---    
 
 ![](git0.png)  
