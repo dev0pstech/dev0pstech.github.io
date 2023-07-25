@@ -20,7 +20,7 @@ timezone: Asia/Kolkata
 
 title: Ajay Tekam # the main title
 
-tagline: Hi, my name is Ajay, I am working as a DevOps Engineer. This is my personal blog where i share my notes, learnings and other stuff which i found interesting. # it will display as the sub-title
+tagline: Hi, my name is Ajay, I am a DevOps Engineer. This is my personal blog where i share my notes, learnings and other stuff which i found interesting. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -45,7 +45,6 @@ social:
     - https://github.com/ajaytekam # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/ajaykt1
 
 google_site_verification: # fill in to your verification string
 
