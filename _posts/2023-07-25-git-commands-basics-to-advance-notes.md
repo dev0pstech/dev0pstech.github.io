@@ -28,9 +28,6 @@ image:
 - [Git Branching Stratagies](#git-branching-stratagies)     
 - [Pull Requests](#pull-requests)    
 - [Upstream](#upstream)    
-
-------------------
-
 - [Tools for Git](#tools-for-git)   
 
 ------------------

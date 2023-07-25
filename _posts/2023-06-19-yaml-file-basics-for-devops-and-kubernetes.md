@@ -21,6 +21,8 @@ image:
 - [A List of Dictonaries](#a-list-of-dictonaries)   
 - [Some useful utilities](#some-useful-utilities)   
 
+----------------
+
 ## Basics     
 
 YAML file is a text-based file used for configuration files, data serialization, and exchange between different as a format for storing structured data.

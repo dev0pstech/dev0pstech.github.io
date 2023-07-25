@@ -21,6 +21,7 @@ image:
 - [Help](#help)   
 - [Magic commands](#magic-commands)    
 
+---------------
 
 ## Introduction   
 
