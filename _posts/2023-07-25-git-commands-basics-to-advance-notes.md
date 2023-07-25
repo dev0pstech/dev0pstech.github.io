@@ -18,7 +18,7 @@ image:
 - [Pull and fetch](#pull-and-fetch)  
 - [Git Log and Previous Commits](#git-log-and-previous-commits)   
 - [Git Branch and Merge](#git-branch-and-merge)  
-- [Temporary Commits](#temporary-commits)
+- [Temporary Commits : Git Stash](#temporary-commits)
 - [Stage and Snapshots](#stage-and-snapshots)  
 - [Inspact and Compare](#inspact-and-compare)  
 - [Git pull and Fetch](#git-pull-and-fetch)
@@ -228,6 +228,8 @@ git reset --hard "HEAD@{2}"
 
 `git stash` command is used to temporarily  store the un-commited work on a temporary commit or stash. So you can pull the latest commit from remote repo and after that you can restore the stash with the latest commit
 
+> Note : the git stash command does not store un-staged files, it does not include changes that are un-staged.  
+
 To Create a stash 
 
 ```sh   
@@ -342,7 +344,7 @@ Difference between two branch
 git diff branchA..branchB
 ```
 
-### Git pull and Fetch
+### Git Pull and Fetch
 
 Pull and merge all remote repo 
 
@@ -362,6 +364,67 @@ color autoconfig
 ```sh  
 git config --global color.ui auto  
 ```  
+
+### Git Reset Command 
+
+* `git reset` command used to move the current branch's HEAD to a specific commit, effectively undoing or redoing changes and modifying the state of the repository.  
+
+* What is HEAD ? 
+    - HEAD is a special pointer or reference that points to the most recent commit on the current branch.   
+    - It represents the tip of the branch, which is the commit where the branch is currently pointing.  
+    - When a commit is made then HEAD pointer moves forward to the newly created commit, pointing to the latest state of the branch.  
+
+__Git reset use cases :__  
+
+* Undo the commit 
+* Goto previous commit
+* Undo merge
+* Undo rebase 
+
+__Types of reset :__   
+
+* Soft Reset : 
+    - Moves the branch's HEAD to the specified commit.  
+    -   Leaves the changes from the commits between the current HEAD and the target commit in the staging area (index).  
+    - Leaves the changes from the commits between the target commit and the original branch tip in the working directory.   
+    - Useful for "undoing" a commit while keeping the changes staged for the next commit.   
+    - `git reset --soft <commit_sha>`   
+* Mixed Reset : 
+    - This is the default mode of git reset.
+    - Moves the branch's HEAD to the specified commit.
+    - Resets the staging area (index) to match the target commit, effectively removing all changes from the staging area.
+    - Leaves the changes from the commits between the target commit and the original branch tip in the working directory.
+    - Useful for "undoing" a commit and un-staging the changes.
+* Hard Reset : 
+    - Moves the branch's HEAD to the specified commit.  
+    - Resets the staging area (index) to match the target commit, effectively removing all changes from the staging area.  
+    - Discards all changes from the commits between the target commit and the original branch tip in the working directory.  
+    - Irreversibly discards changes, so use this form with caution.  
+    - Useful for completely undoing changes and making the working directory match a specific commit.   
+
+> Note :  Be careful when using the `--hard` option, as it can lead to data loss if used incorrectly. It's recommended to create a backup or use Git's reflog (git reflog) to recover lost changes in case of accidental data loss.   
+
+Example : 
+
+* Soft reset : Undo the commit, change the HEAD into provide SHA commit and keep the changes in staged area.  
+
+Get the commit logs using `git log` or `git log --oneline` for short sha one code, now reset the commit 
+
+```sh  
+git reset --soft <commit_SHA>
+```   
+
+* Hard reset : Undo the commit, change the HEAD into provide SHA commit and compeletely delete all the changes.   
+
+```sh  
+git reset --hard <commit_SHA>
+```   
+
+* Mixed reset : Undo the commit, change the HEAD into provide SHA commit and keep changes in unstaged area.  
+
+```sh  
+git reset --hard <commit_SHA>
+```   
 
 ### Git PAN key Management   
 
