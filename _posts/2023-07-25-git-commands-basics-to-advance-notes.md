@@ -5,6 +5,9 @@ date: 2023-07-25 16:10:00 +0530
 img_path: /assets/posts/20230725/   
 categories: [DevOps, Git, VCS, Github]    
 tags: [yaml, git, vcs, Github, DevOpsTools]  
+image:
+  path: /assets/posts/20230725/git0.png 
+  alt: git command basics to advance notes 
 ---    
 
 ![](git0.png)  
@@ -45,19 +48,19 @@ git config --global user.email "johndoe@gmail.com"
 
 * Create repository 
 
-```
+```sh 
 mkdir myrepo
 ```
 
 * Initialize git repo 
 
-```   
+```sh   
 git init
 ```  
 
 * Stage files 
 
-```   
+```sh   
 // stage single file 
 git add MyFile  
 // stage all files 
@@ -66,43 +69,43 @@ git add .
 
 * Commit changes 
 
-```   
+```sh   
 git commit -m "Message"
 ```  
 
 * Set remote Repository url 
 
-```
+```sh
 git remote add origin https://gitserver.com/user/myrepo.git
 ```
 
 * Change remote  
 
-```
+```sh
 git remote set-url origin https://gitserver.com/user/myrepo.git
 ```  
 
 * See remote url   
 
-```
+```sh
 git remote -v 
 ``` 
 
 * Remove origin URL 
 
-``` 
+```sh 
 git remote remove origin 
 ``` 
 
 * If you have multiple branches you can push all of them at once  
 
-```   
+```sh   
 git push -all origin  
 ```  
 
 * Push only selected branch or newly created branch   
 
-```  
+```sh  
 git push origin devBranch  
 ```     
 
@@ -110,35 +113,35 @@ git push origin devBranch
 
 * fetch command  
 
-```
+```sh
 git fetch origin main
 ```  
 
 Git fetch download latest commits from remote repo, this command is safe to run at any time since it never changes any of your local branches under refs/heads, so you can continuely work on your code and after that to merge with fetched code run    
 
-```
+```sh   
 git merge FETCH_HEAD  
 ```  
 
 * pull command  
 
-```
+```sh   
 git pull origin main
 ```  
 
 pull command download latest commit from the remote repo, it is basically combination of  `git fetch origin main` and `git merge FETCH_HEAD`.    
 
-- [Git Log and Previous Commits](#git-log-and-previous-commits)   
+### Git Log and Previous Commits   
 
 Shows all the prevous commits 
 
-``` 
+```sh    
 git log
 ```  
 
 Shows all the previous commits in short forms  
 
-```
+```sh   
 git log --oneline  
 ```  
 
@@ -149,7 +152,7 @@ git log --oneline
 
 * When you staged a file/files `git add file`, then you have done some modification, and you need to revert back then use :
 
-```
+```sh   
 git restore staged <file/files_name>  
 ```   
 
@@ -157,7 +160,7 @@ git restore staged <file/files_name>
 
 First run `git log --oneline`, then select copy the commit id/hash and type below command   
 
-```  
+```sh  
 git revert <commit-hash>
 ```   
 
@@ -172,21 +175,21 @@ This will basically create a new HEAD commit where you can work.
 
 List all branch  
 
-```
+```sh 
 git branch
 ``` 
 
 Create new Branch 
 
-```   
+```sh   
 git branch -c Branch_name
 // or 
 git branch Branch_name
 ```  
 
-Swith into another branch 
+Switch into another branch 
 
-```
+```sh   
 git checkout branch_name 
 // or 
 git switch branch_name
@@ -194,7 +197,7 @@ git switch branch_name
 
 Creating a new branch and checking out at the sametime  
 
-```
+```sh   
 git checkout -b branch_name 
 ```  
 
@@ -203,7 +206,7 @@ __Merging branch :__
 * git merge preserves the commit history of both branches, resulting in a "merge commit" that combines the changes from the source branch into the target branch.  
 * Once the merge is completed, the changes from the source branch will be integrated into the target branch, and the commit history will reflect the merge commit.  
 
-```
+```sh  
 git merge branch 
 ```  
 
@@ -211,13 +214,13 @@ git merge branch
 
 first run command 
 
-```  
+```sh   
 git reflog
 ```  
 
 Now find the HEAD before merge command, for example "HEAD@{2}", now use the below command 
  
-```  
+```sh  
 git reset --hard "HEAD@{2}"
 ```  
 
@@ -227,13 +230,13 @@ git reset --hard "HEAD@{2}"
 
 To Create a stash 
 
-```   
+```sh   
 git stash 
 ```   
 
 To list all the stash 
 
-```  
+```sh  
 git stash 
 // or 
 git stash list
@@ -241,37 +244,37 @@ git stash list
 
 Add stashed files into repo after pull 
 
-```
+```sh  
 git stash pop   
 ```  
 
 The above command also remove the stash from stack (stash stack). To appy the stash without removing from the stack   
 
-```   
+```sh   
 git stash apply 
 ```   
 
 Shows the changes in detials  
 
-```  
+```sh  
 git stash show 
 ```  
 
 similar to above command  
 
-```  
+```sh  
 git stash show -p 
 ``` 
 
 Remove the single entry from the stack 
 
-```  
+```sh  
 git stash drop <stash_id>   
 ```  
 
 Example 
 
-```
+```sh  
 git stash drop stash@{1}
 ```  
 
@@ -279,37 +282,37 @@ git stash drop stash@{1}
 
 show modifications
 
-```
+```sh  
 git status 
 ``` 
 
 Stage a file 
 
-```
+```sh   
 git add file_name 
 ``` 
 
 Unstage a file  
 
-```
+```sh   
 git reset file_name 
 ``` 
 
 Unstage all files and revert back to last commit
 
-```
+```sh   
 git reset --hard HEAD
 ``` 
 
 See what is changed but not staged
 
-```
+```sh  
 git diff
 ``` 
 
 Show what is changed but not yet commited  
 
-```
+```sh  
 git diff --staged
 ```  
 
@@ -317,25 +320,25 @@ git diff --staged
 
 Show commit history 
 
-```
+```sh   
 git log
 ```  
 
 Show difference between branch commit
 
-``` 
+```sh   
 git log branchA..branchB
 ```
 
 Show commits between two branches  
 
-```
+```sh  
 git log --follow file_name
 ``` 
 
 Difference between two branch 
 
-```
+```sh  
 git diff branchA..branchB
 ```
 
@@ -343,20 +346,20 @@ git diff branchA..branchB
 
 Pull and merge all remote repo 
 
-```
+```sh  
 git pull [origin]
 ```  
 
 Delete Remote Repository 
 
-```
+```sh  
 git push origin --delete branchName
 ```  
 
 
 color autoconfig
 
-```
+```sh  
 git config --global color.ui auto  
 ```  
 
@@ -373,7 +376,7 @@ __Using PAT with git repos :__
 
 Just push the repo and paste the PAT in username field and leave password field blank.  
 
-```
+```sh   
 git push -u origin main 
 username: $YOUR_PERSONAL_ACCESS_TOKEN
 password: <leave_this_empty_and_hit_enter>  
@@ -383,13 +386,13 @@ __Cached Token :__
 
 You can cache the token for 15 minutes by running below command 
 
-```
+```sh  
 git config credential.helper cache   
 ```  
 
 and then push the repo
 
-```
+```sh  
 git push -u origin main 
 username: $YOUR_PERSONAL_ACCESS_TOKEN
 password: <leave_this_empty_and_hit_enter>  
@@ -401,13 +404,13 @@ __Store credentials :__
 
 You can store credentials permanently so you don't have to provide the PAT again 
 
-```
+```sh  
 git config credential.helper store  
 ```  
 
 Push the repo  
 
-```
+```sh  
 git push -u origin main 
 username: $YOUR_PERSONAL_ACCESS_TOKEN
 password: <leave_this_empty_and_hit_enter>  
@@ -434,13 +437,13 @@ git cherry-pick <feature_branch_SHA1_signature>
 
 Above command also commit all the changes from feature branch to main branch. So just to copy the changes from feature branch into commit branch use the flag `--no-commit`  
 
-```  
+```sh  
 git cherry-pick <feature_branch_SHA1_signature> --no-commit   
 ```  
 
 Change/edit the commit message 
 
-```  
+```sh  
 git cherry-pick <feature_branch_SHA1_signature> --edit 
 ```  
 
@@ -452,7 +455,7 @@ git cherry-pick <feature_branch_SHA1_signature> --edit
 
 Example: Suppose we are in master branch and want to rebase feature branch into master branch 
 
-```
+```sh  
 git rebase feature 
 ```  
 
@@ -460,13 +463,13 @@ git rebase feature
 
 first run command 
 
-```  
+```sh  
 git reflog
 ```  
 
 Now find the HEAD before rebase command, for example "HEAD@{2}", now use the below command 
  
-```  
+```sh  
 git reset --hard "HEAD@{2}"
 ```  
 
@@ -487,7 +490,7 @@ When a merge conflict occurs, Git will identify the conflicting files and mark t
 
 Example 
 
-```
+```sh  
 #!/bin/bash 
 
 <<<<<<< HEAD
