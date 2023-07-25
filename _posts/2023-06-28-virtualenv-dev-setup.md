@@ -5,9 +5,10 @@ date: 2023-06-28 03:25:00 +0530
 img_path: /assets/posts/20230628/   
 categories: [DevOps, Python, Development]    
 tags: [python, virtualenv]  
+image:
+  path: virtualenv.png   
+  alt: Setting up Development environment with virtualenv
 ---    
-
-![](virtualenv.png)   
 
 Virtualenv is a Python module which helps to create isolated Python environments for our scripting experiments, which creates a folder with all necessary executable files and modules for a basic Python project.    
 

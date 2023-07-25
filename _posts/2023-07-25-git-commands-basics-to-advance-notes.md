@@ -7,7 +7,7 @@ categories: [DevOps, Git, VCS, Github]
 tags: [yaml, git, vcs, Github, DevOpsTools]  
 image:
   path: git0.png 
-  alt: Git Command Notes
+  alt: Git Command Basics to Advance Notes 
 ---    
 
 ## Contents 
@@ -35,7 +35,7 @@ image:
 
 ------------------
 
-### Repository Initialization  
+## Repository Initialization  
 
 * If you are using git for the first time then you have to setup email and usernames    
 
@@ -107,7 +107,7 @@ git push -all origin
 git push origin devBranch  
 ```     
 
-### Pull and Fetch  
+## Pull and Fetch  
 
 * fetch command  
 
@@ -129,7 +129,7 @@ git pull origin main
 
 pull command download latest commit from the remote repo, it is basically combination of  `git fetch origin main` and `git merge FETCH_HEAD`.    
 
-### Git Log and Previous Commits   
+## Git Log and Previous Commits   
 
 Shows all the prevous commits 
 
@@ -146,7 +146,7 @@ git log --oneline
 * Now to checkout particular commit just type `git checkout <commit_id>`    
 * And to jump out main branch type `git switch -` 
 
-### Rolling Back 
+## Rolling Back 
 
 * When you staged a file/files `git add file`, then you have done some modification, and you need to revert back then use :
 
@@ -165,7 +165,7 @@ git revert <commit-hash>
 This will basically create a new HEAD commit where you can work.   
 
 
-### Git Branch and Merge   
+## Git Branch and Merge   
 
 * A branch is a lightweight movable pointer that represents an independent line of development within a repository.   
 * It allows you to work on different features, bug fixes, or improvements without affecting the main codebase.  
@@ -222,7 +222,7 @@ Now find the HEAD before merge command, for example "HEAD@{2}", now use the belo
 git reset --hard "HEAD@{2}"
 ```  
 
-###  Temporary Commits 
+##  Temporary Commits 
 
 `git stash` command is used to temporarily  store the un-commited work on a temporary commit or stash. So you can pull the latest commit from remote repo and after that you can restore the stash with the latest commit
 
@@ -278,7 +278,7 @@ Example
 git stash drop stash@{1}
 ```  
 
-### Stage and Snapshots 
+## Stage and Snapshots 
 
 show modifications
 
@@ -316,7 +316,7 @@ Show what is changed but not yet commited
 git diff --staged
 ```  
 
-### Inspact and Compare  
+## Inspact and Compare  
 
 Show commit history 
 
@@ -342,7 +342,7 @@ Difference between two branch
 git diff branchA..branchB
 ```
 
-### Git Pull and Fetch
+## Git Pull and Fetch
 
 Pull and merge all remote repo 
 
@@ -363,7 +363,7 @@ color autoconfig
 git config --global color.ui auto  
 ```  
 
-### Git Reset Command 
+## Git Reset
 
 * `git reset` command used to move the current branch's HEAD to a specific commit, effectively undoing or redoing changes and modifying the state of the repository.  
 
@@ -424,7 +424,7 @@ git reset --hard <commit_SHA>
 git reset --hard <commit_SHA>
 ```   
 
-### Git PAN key Management   
+## Git PAN key Management   
 
 __Create PAT :__
 
@@ -479,7 +479,7 @@ password: <leave_this_empty_and_hit_enter>
 
 This will stary parmenent and you can use it to push any repo . 
 
-### Cherry Picking
+## Cherry Picking
 
 `git cherry-pick` command is used to pick a commit from a branch and applying it to current working HEAD.   
 
@@ -508,7 +508,7 @@ Change/edit the commit message
 git cherry-pick <feature_branch_SHA1_signature> --edit 
 ```  
 
-### Rebasing  
+## Rebasing  
 
 * `git rebase` integrate changes from one branch into another by moving or applying a series of commits on top of another branch's commit history.   
 * It is an alternative to merging and is commonly used to keep a cleaner and more linear commit history.  
@@ -536,7 +536,7 @@ git reset --hard "HEAD@{2}"
 
 > Notes on rebase Safe Practices: Do not rebase on commits that you've already pushed/shared on a remote repository, instead use for cleaning up your local commit history before merging  it into a shared team branch.   
 
-### Merge Conflicts
+## Merge Conflicts
 
 Merge conflicts occur when Git attempts to integrate changes from two different branches, but it finds conflicting modifications in the same part of a file or in related parts of multiple files. Essentially, Git doesn't know which version of the conflicting changes to apply automatically, and it requires manual intervention from the developer to resolve the conflicts.    
 
@@ -569,7 +569,7 @@ echo "Hello world Again"
 * Once you've resolved all the conflicts in the file, you can save it, stage it with git add, and complete the merge by creating a new merge commit with git commit.
 * It's important to be careful while resolving merge conflicts and to ensure that the final result is what you intend it to be, as incorrect resolutions can lead to code errors or unintended behavior. Also, when working in a team, communication is essential to avoid conflicts and to resolve them efficiently when they do occur.
 
-### Git Branching Stratagies   
+## Git Branching Stratagies   
 
 * A branching strategy is a set of rules that software development teams adopt when writing, merging and deploying code when using a version control system.  
 * Such a strategy is necessary as it helps keep repositories organized to avoid errors in the application when multiple developers are working simultaneously and are all adding their changes at the same time.  
@@ -618,7 +618,7 @@ __Example of Branching Stratagies :__
 
 ![](git6.png)  
 
-### Pull Requests    
+## Pull Requests    
 
 Git pull request is a feature used to propose changes from one branch to another, typically from a feature branch to a main branch.     
 
@@ -630,7 +630,7 @@ Git pull request is a feature used to propose changes from one branch to another
 6. Addressing the Feadback       
 7. Merge or Close                
  
-### Upstream  
+## Upstream  
 
 * In the context of github "upstream" or "upstream URL" refers to the URL of the original repository from which a fork was created.   
 * When you fork a repository on GitHub, you create a copy of that repository under your GitHub account. The repository you forked from becomes the "upstream repository," and your forked copy is the "forked repository."
@@ -644,7 +644,7 @@ Steps :
 4. Verify upstream url by `git remote -v`   
 5. Now fetch the latest changes from the original repository into your local fork `git fetch upstream`.    
 
-### Tools for Git
+## Tools for Git
 
 * __lazygit :__ simple terminal UI for git commands.  
 

@@ -5,9 +5,10 @@ date: 2023-06-19 14:30:00 +0530
 img_path: /assets/posts/20230619/   
 categories: [DevOps, Kubernetes]    
 tags: [yaml]  
+image:
+  path: yaml.jpg
+  alt: Yaml file Basics for Devops and Kubernetes  
 ---    
-
-![](yaml.jpg)  
 
 ## Contents   
 

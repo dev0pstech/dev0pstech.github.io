@@ -5,9 +5,10 @@ date: 2023-06-28 03:30:00 +0530
 img_path: /assets/posts/20230628/   
 categories: [DevOps, Python, Development]    
 tags: [python, ipython]  
+image:
+  path: ipython.png 
+  alt: IPYTHON for Python Development 
 ---    
-
-![](ipython.png)   
 
 ## Contents   
 
@@ -46,7 +47,7 @@ with `easy_install`
 sudo easy_install ipython  
 ```  
 
-## Basic Usage :  
+## Basic Usage 
 
 To start the interpreter use `ipython` command   
 
