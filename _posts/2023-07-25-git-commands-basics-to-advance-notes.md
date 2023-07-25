@@ -6,11 +6,9 @@ img_path: /assets/posts/20230725/
 categories: [DevOps, Git, VCS, Github]    
 tags: [yaml, git, vcs, Github, DevOpsTools]  
 image:
-  path: /assets/posts/20230725/git0.png 
+  path: git0.png 
   alt: Git Command Notes
 ---    
-
-![](git0.png)  
 
 ## Contents 
 
