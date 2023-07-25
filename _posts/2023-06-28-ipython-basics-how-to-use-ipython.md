@@ -12,7 +12,7 @@ tags: [python, ipython]
 ## Contents   
 
 - [Introduction](#introduction)   
-- [Installing Python](#installing-python)   
+- [Installing IPython](#installing-ipython)   
 - [Basic Usage](#basic-usage)    
 - [Running simple python commands](#running-simple-python-commands)     
 - [Running shell command](#running-shell-command)   
