@@ -25,7 +25,7 @@ The window.postMessage() method allows to send cross-domain data messages betwee
 
 At the sender end :  
 
-```  
+```js   
 targetWindow.postMessage(message, targetOrigin, [transfer]);
 ```  
 
@@ -38,7 +38,7 @@ Where :
 
 At the receiving end/dispatched event :   
 
-```  
+```js    
 window.addEventListener("message", (event) => {
   if (event.origin !== "")
     return;
