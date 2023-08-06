@@ -1,7 +1,7 @@
 ---   
 title: Building Docker Images with Dockerfile
 author: ajaytekam   
-date: 2023-08-06 20:00:00 +0530   
+date: 2023-08-06 20:05:00 +0530   
 img_path: /assets/posts/20230806/ 
 categories: [DevOps, Docker, microservices]    
 tags: [DevOps, docker, containerization, microservices]  

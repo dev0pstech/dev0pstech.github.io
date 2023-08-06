@@ -1,7 +1,7 @@
 ---   
-title: Building and Running Services with DockerCompose
+title: Building and Running Services with Docker Compose
 author: ajaytekam   
-date: 2023-08-06 20:00:00 +0530   
+date: 2023-08-06 20:10:00 +0530   
 img_path: /assets/posts/20230806/ 
 categories: [DevOps, Docker, microservices]    
 tags: [devOps, docker, containerization, microservices]  
