@@ -16,9 +16,10 @@ Dockerfile Instructions :
 * `FROM` : Specify Base image.   
 * `LABELS` : Adds metadata to an image.     
 * `RUN` : Executes commands in a new layer and commit the results.  
-* `ADD/COPY` : Adds files amd folders into image.    
+* `COPY` : Copy files from host file system into a container image.  
+* `ADD` : Copy files from host to container, but it can also support unpacking of tar archieve files. You can also copy remote files into container.    
 * `CMD` : Runs binaries/commands on docker run.   
-* `ENTRYPOINT` : Allows to configure a container that will run as an executable.   
+* `ENTRYPOINT` : Allows to configure a container that will run as an executable. Means the command is an entrypoint, user can pass the argument to that entrypoint command. In entrypoint the user has to control argument, means user can provide argument during the container creation/initiation and in CMD you have to hardcode arguments.       
 * `VOLUME` : Creates a mount point and marks it as holding externally mounted volumes.   
 * `EXPOSE` : Container listens on the specified network ports at runtime.  
 * `ENV` : Sets the environment variable.  
@@ -28,7 +29,6 @@ Dockerfile Instructions :
 * `ONBUILD` : Adds to the image a trigger instruction to be executed at a later time.    
 
 An example of Dockerfile  
-
 
 ```bash    
 FROM ubuntu:latest
