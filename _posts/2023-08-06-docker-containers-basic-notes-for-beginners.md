@@ -35,7 +35,6 @@ image:
     - [Delete/Rename images](#deleterename-images)  
     - [Getting a Bash shell on running container](#getting-a-bash-shell-on-running-container)  
     - [Mapping local directory into running container's directory](#mapping-local-directory-into-running-containers-directory)  
-    - [Creating New image using Dockerfile file](#creating-new-image-using-dockerfile-file)   
     - [Pushing docker image into dockerhub](#pushing-docker-image-into-dockerhub)   
     - [Creating docker image from an Updated/Customized Container (known as commiting)](#creating-docker-image-from-an-updatedcustomized-container-known-as-commiting)  
     - [Trasnfering Images offline from one machine to another](#trasnfering-images-offline-from-one-machine-to-another)   
