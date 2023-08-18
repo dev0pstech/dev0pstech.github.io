@@ -737,7 +737,7 @@ spec:
       targetPort: 80
 ```  
 
-### ExtarnalName 
+### ExternalName 
 
 * an ExternalName service is a type of service that provides a way to access external services located outside the cluster. 
 * It is used when you want to create a service that maps to a DNS name rather than a set of pods or endpoints within the cluster.
