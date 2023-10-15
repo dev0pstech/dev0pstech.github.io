@@ -1,5 +1,5 @@
 ---   
-title: What is DNS and how it works
+title: Terraform Notes for Absolute Beginners  
 author: ajaytekam   
 date: 2023-10-15 14:53:00 +0530   
 img_path: /assets/posts/20231015/ 
