@@ -1,7 +1,7 @@
 ---   
 title: Python Programming Basics for Beginners
 author: ajaytekam   
-date: 2023-10-15 14:53:00 +0530   
+date: 2023-10-15 14:57:00 +0530   
 img_path: /assets/posts/20231015/ 
 categories: [Python, Coding]
 tags: [Coding]
