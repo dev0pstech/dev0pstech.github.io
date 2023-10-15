@@ -42,7 +42,7 @@ image:
 - [Import Resources](#import-resources)   
 - [Remote State Management](#remote-state-management)   
 - [Terraform Workspaces](#terraform-workspaces)  
-- [Securing Sensitive Inforamtion](#securing-sensitive-information)  
+- [Securing Sensitive Information](#securing-sensitive-information)  
 - [Create Resources in multiple Regions](#create-resources-in-multiple-regions)   
 - [Create Resources in multiple Accounts](#create-resources-in-multiple-accounts)    
 
@@ -70,7 +70,7 @@ __Features of Terraform :__
 - Terraform uses DSL (Domain Specific Language) which is similar to json, it is known as HCL (HashiCorp Configuration Language).  
 - Maintain infrastructure change history using vcs (git).  
 
-## Terraform Ressources      
+## Terraform Resources      
 
 - A resource represents a single item that exists within a popular infrastructure provider, such as an amazon web services, ec2 instances, gcp resource has attributes.  
  - Terraform uses this information to create, update or delete the resources as needed to bring the infrastructure into the desired state.  
@@ -2053,7 +2053,7 @@ Terraform can store states in various remote backends like amazon's Simple Stora
 
 Example: 
 
-[Using S3 bucket as Terraform beckends](S#using-s3-bucket-as-terraform-backend)  
+[Using S3 bucket as Terraform beckends](#using-s3-bucket-as-terraform-backend)  
 [Terraform State Locking with DynamoDB](#terraform-state-lock)   
 
 ## Terraform Workspaces   
@@ -2174,7 +2174,7 @@ __terraform.tfstate.d directory :__
 - Whenever you work with terraform workspace and when you create multiple workspaces then you will get one directory created for each workspace inside your terraform project.   
 - So with each workspace, you end up with its own terraform.tfstate and terraform.tfstate.d file which will help you to separate and isolate the infrastructure behavior based on your configuration settings.    
 
-## Securing Sensitive Inforamtion   
+## Securing Sensitive Information   
 
 - Suppose we have local variable and if we use them, for example output variables, example   
 
