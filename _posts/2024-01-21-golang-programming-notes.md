@@ -14,9 +14,10 @@ image:
 - [Program Structure](#program-structure)    
 - [Running and Compilation](#running-and-compilation)    
 - [Package Imports](#package-imports)    
+- [Creating Custom Packages](#creating-custom-packages)   
 - [Variables](#variables)    
 - [Basic Data Types](#basic-data-types)    
-- [User Input Output with fmt](#user-input-output-with-fmt)  
+- [User Input Output with fmt](#user-input-output-with-fmt)     
 - [Array and Slices](#array-and-slices)  
 - [Loops in Go](#loops-in-go)    
 - [Conditional Statement](#conditional-statement)  
@@ -179,6 +180,120 @@ or
 ```go  
 const testVar = "Ajay"
 ```  
+
+# Creating Custom Packages  
+
+## Creating Go Project   
+
+```bash   
+go mod init exmple/hello
+```  
+
+* `exmple/hello` is path of the project/code.  
+* `go.mod` file lists the specific versions of the dependencies that your project uses.  
+* It is good idea to put the github repo url in project example: 
+
+```bash  
+go mod init github.com/ajaytekam/gotest
+```  
+
+## Example of Creating Go Packege   
+
+* Create a go project  
+
+```bash  
+go mod init github.com/ajaytekam/gotest
+```  
+
+* Create two files   
+
+```go    
+// func01.go
+
+package gotest 
+
+import "fmt"
+
+func SayHello01() {
+  fmt.Println("Hello world, from func01.go")
+}
+```  
+
+```go    
+// func02.go
+
+package gotest
+
+import "fmt"
+
+func SayHello02() {
+  fmt.Println("Hello world This message from func02.go")
+}
+```  
+
+* There are three total files  
+
+```  
+func01.go
+func02.go
+go.mod
+```  
+
+Now push the code into github repo  
+
+## Using the package in program  
+
+* Creating a project  
+
+```bash    
+go mod init example/hello
+```  
+
+* Create a file with below code  
+
+```go  
+// main.go
+package main
+
+import "github.com/Ajaytekam/gotest"
+```  
+
+* Now run the below command to import the package from github, by doing this the auto-complete function in your editor (LSP) will pickup the defined functions in gotest package  
+
+```bash  
+go mod tidy 
+```  
+
+where `tidy` flag used to Adds missing and removes unused modules and dependencies from the go.   
+
+* Now add this code into `main.go`   
+
+```go  
+// main.go
+
+package main
+
+import "github.com/Ajaytekam/gotest"
+
+func main() {
+  gotest.SayHello01()
+  gotest.SayHello02()
+}
+```  
+
+Run the application `go run .`   
+
+### Creating Binary    
+
+To create binary run command `go build .`   
+
+### Installing the Binary   
+
+To install the binary in default go binary location run `go install .`    
+
+### Remove Install Binary  
+
+You have to remove the installed binary manually. The defult path for the go binary is `~/.go/bin` in linux and `~/.go/bin` in linux.   
 
 # Basic Data Types    
 
